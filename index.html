@@ -105,7 +105,7 @@ function makeEmbedUrl(videoId) {
     rel: "0"
   });
   if (loopEnabled) {
-    params.set("loop", "1");
+    params.set("loop", "1" : "0");
     params.set("playlist", videoId);
   }
   return "https://www.youtube.com/embed/" + encodeURIComponent(videoId) + "?" + params.toString();
